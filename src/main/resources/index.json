@@ -1,0 +1,2197 @@
+{
+  "title": "Spoon Execution",
+  "started": 1562241718867,
+  "duration": 804,
+  "results": {
+    "3200ece3b82f65b5": {
+      "installFailed": false,
+      "deviceDetails": {
+        "model": "SM-J600GF",
+        "manufacturer": "samsung",
+        "version": "9",
+        "apiLevel": 28,
+        "isEmulator": false
+      },
+      "testResults": [
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I want to recharge my TV Cable Prepaid Voucher"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I want to take money from Multifinance"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I would like to buy Game Voucher"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I would like to do a BPJS transaction"
+          },
+          {
+            "status": "PASS",
+            "exception": {
+              "className": "androidx.test.espresso.NoMatchingViewException",
+              "message": "No views in hierarchy found matching: with id: blibli.mobile.commerce:id/iv_status_icon\n\nView Hierarchy:\n+>DecorView{id=-1, visibility=VISIBLE, width=160, height=180, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(wrapxwrap) gr=CENTER sim={adjust=pan} ty=APPLICATION fmt=TRANSPARENT wanim=0x10302f8\nfl=DIM_BEHIND ALT_FOCUSABLE_IM SPLIT_TOUCH HARDWARE_ACCELERATED\npfl= remains{ 0x1000000 } naviIconColor=0}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}\n|\n+->FrameLayout{id=-1, visibility=VISIBLE, width=160, height=180, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@467a660, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}\n|\n+-->FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=160, height=180, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@53513de, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}\n|\n+--->LinearLayout{id=16909340, res-name=parentPanel, visibility=VISIBLE, width=160, height=180, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@184c2db, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4}\n|\n+---->LinearLayout{id=16909715, res-name=topPanel, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@de9c0b6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}\n|\n+----->LinearLayout{id=16909702, res-name=title_template, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@fad108d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}\n|\n+------>AppCompatImageView{id=16908294, res-name=icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@1c93242, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}\n|\n+------>DialogTitle{id=16908783, res-name=alertTitle, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@106b253, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}\n|\n+----->AppCompatImageView{id=16909696, res-name=titleDivider, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9616790, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}\n|\n+---->LinearLayout{id=16908915, res-name=contentPanel, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@e3c308e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}\n|\n+----->ScrollView{id=16909451, res-name=scrollView, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@24020af, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0}\n|\n+---->FrameLayout{id=16908924, res-name=customPanel, visibility=VISIBLE, width=152, height=156, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@90c445, tag=null, root-is-layout-requested=false, has-input-connection=false, x=6.0, y=18.0, child-count=1}\n|\n+----->FrameLayout{id=16908331, res-name=custom, visibility=VISIBLE, width=152, height=156, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@2f818cb, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}\n|\n+------>FrameLayout{id=-1, visibility=VISIBLE, width=152, height=136, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@fe5fc1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=10.0, child-count=1}\n|\n+------->LinearLayout{id=16908836, res-name=body, visibility=VISIBLE, width=152, height=136, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@a6c9754, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}\n|\n+-------->ProgressBar{id=16908301, res-name=progress, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@55036fd, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=20.0}\n|\n+-------->AppCompatTextView{id=16908299, res-name=message, visibility=VISIBLE, width=0, height=33, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@896aff2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=136.0, y=51.0, text=, input-type=0, ime-target=false, has-links=false}\n|\n+---->LinearLayout{id=16908863, res-name=buttonPanel, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@aa5d4c0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}\n|\n+----->LinearLayout{id=-1, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@db84b4a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=5}\n|\n+------>LinearLayout{id=16909179, res-name=leftSpacer, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@3a4cabb, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0}\n|\n+------>AppCompatButton{id=16908313, res-name=button1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@a917bd8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}\n|\n+------>AppCompatButton{id=16908315, res-name=button3, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4bdbb31, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}\n|\n+------>AppCompatButton{id=16908314, res-name=button2, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@cb7d216, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}\n|\n+------>LinearLayout{id=16909429, res-name=rightSpacer, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@f4b5797, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0}\n|\n+-->ViewStub{id=16908763, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d8e7d84, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}\n|",
+              "elements": [
+                {
+                  "className": "dalvik.system.VMStack",
+                  "line": 0,
+                  "methodName": "getThreadStackTrace",
+                  "isNative": true
+                },
+                {
+                  "className": "java.lang.Thread",
+                  "fileName": "Thread.java",
+                  "line": 1538,
+                  "methodName": "getStackTrace",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 88,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 297,
+                  "methodName": "check",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.DigitalProductsSteps",
+                  "fileName": "DigitalProductsSteps.java",
+                  "line": 107,
+                  "methodName": "theUserSPaymentIsDoneAndUserIsOnThankYouPage",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 15,
+                  "methodName": "Then the user's payment is done and user is on thank you page",
+                  "isNative": false
+                }
+              ]
+            },
+            "duration": 90,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I would like to do online transaction for Tv Cable postpaid"
+          },
+          {
+            "status": "PASS",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I would like to recharge my Data Paket on quick login"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/et_user_email_id> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 269,
+                  "methodName": "quickLogin",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 95,
+                  "methodName": "theUserDoesAQuickLogin",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 57,
+                  "methodName": "And the user does a quick login",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 75,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I would like to recharge my Phone on quick login"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I would like to recharge my Pulsa Pascabayar on quick login"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I would like to recharge my Tagihan PLN on quick login"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user I would like to recharge my Token PLN on quick login"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user i would like to pay Telephone Bill"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ],
+        [
+          {
+            "className": "Feature Digital Products Sanity scenarios",
+            "methodName": "Scenario Outline As a user i would like to pay water bill"
+          },
+          {
+            "status": "FAIL",
+            "exception": {
+              "className": "androidx.test.espresso.PerformException",
+              "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",
+              "elements": [
+                {
+                  "className": "androidx.test.espresso.PerformException$Builder",
+                  "fileName": "PerformException.java",
+                  "line": 82,
+                  "methodName": "build",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 79,
+                  "methodName": "getUserFriendlyError",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.base.DefaultFailureHandler",
+                  "fileName": "DefaultFailureHandler.java",
+                  "line": 51,
+                  "methodName": "handle",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 312,
+                  "methodName": "waitForAndHandleInteractionResults",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 173,
+                  "methodName": "desugaredPerform",
+                  "isNative": false
+                },
+                {
+                  "className": "androidx.test.espresso.ViewInteraction",
+                  "fileName": "ViewInteraction.java",
+                  "line": 114,
+                  "methodName": "perform",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.BasePageUITest",
+                  "fileName": "BasePageUITest.java",
+                  "line": 323,
+                  "methodName": "waitUntilVisible",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.pages.LoginAccountAndProfilePageUITest",
+                  "fileName": "LoginAccountAndProfilePageUITest.java",
+                  "line": 284,
+                  "methodName": "clicksOnNavigationAccount",
+                  "isNative": false
+                },
+                {
+                  "className": "blibli.mobile.commerce.test.steps.LoginAccountAndProfileStepsUITest",
+                  "fileName": "LoginAccountAndProfileStepsUITest.java",
+                  "line": 147,
+                  "methodName": "theUserLogsOutFromBlibli",
+                  "isNative": false
+                },
+                {
+                  "className": "✽",
+                  "fileName": "feature/SanityDigitalProduct/SanityDigitalProduct.feature",
+                  "line": 4,
+                  "methodName": "Given the user logs out from blibli",
+                  "isNative": false
+                }
+              ],
+              "cause": {
+                "className": "java.util.concurrent.TimeoutException",
+                "elements": [
+                  {
+                    "className": "blibli.mobile.commerce.test.pages.BasePageUITest$4",
+                    "fileName": "BasePageUITest.java",
+                    "line": 291,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$SingleExecutionViewAction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 356,
+                    "methodName": "perform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 248,
+                    "methodName": "doPerform",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction",
+                    "fileName": "ViewInteraction.java",
+                    "line": 63,
+                    "methodName": "access$100",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 153,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "androidx.test.espresso.ViewInteraction$1",
+                    "fileName": "ViewInteraction.java",
+                    "line": 150,
+                    "methodName": "call",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.util.concurrent.FutureTask",
+                    "fileName": "FutureTask.java",
+                    "line": 266,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 873,
+                    "methodName": "handleCallback",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Handler",
+                    "fileName": "Handler.java",
+                    "line": 99,
+                    "methodName": "dispatchMessage",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.os.Looper",
+                    "fileName": "Looper.java",
+                    "line": 214,
+                    "methodName": "loop",
+                    "isNative": false
+                  },
+                  {
+                    "className": "android.app.ActivityThread",
+                    "fileName": "ActivityThread.java",
+                    "line": 7076,
+                    "methodName": "main",
+                    "isNative": false
+                  },
+                  {
+                    "className": "java.lang.reflect.Method",
+                    "line": 0,
+                    "methodName": "invoke",
+                    "isNative": true
+                  },
+                  {
+                    "className": "com.android.internal.os.RuntimeInit$MethodAndArgsCaller",
+                    "fileName": "RuntimeInit.java",
+                    "line": 494,
+                    "methodName": "run",
+                    "isNative": false
+                  },
+                  {
+                    "className": "com.android.internal.os.ZygoteInit",
+                    "fileName": "ZygoteInit.java",
+                    "line": 965,
+                    "methodName": "main",
+                    "isNative": false
+                  }
+                ]
+              }
+            },
+            "duration": 60,
+            "screenshots": [],
+            "files": [],
+            "log": []
+          }
+        ]
+      ],
+      "started": 1562241718884,
+      "duration": 772,
+      "exceptions": []
+    }
+  }
+}
