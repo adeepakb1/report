@@ -33,7 +33,7 @@ public class MainReport {
             + "</head>\n" + "<body>\n" + " <center><img src=\"https://vignette.wikia.nocookie"
             + ".net/logopedia/images/9/93/Blibli_2015.png/revision/latest?cb=20180808040105\" width=\"220\" "
             + "height=\"60\"></center>\n" + "<center>\n"
-            + "<h1>Blibli Deeplinks Mobile Automation Report</h1>\n" + "</center>\n"
+            + "<h1>Blibli Android Automation Report</h1>\n" + "</center>\n"
             + "<div id=\"piechart\" align=\"middle\" style=\"vertical-align: top;\"></div>"
             + "<script type=\"text/javascript\" src=\"https://www.gstatic.com/charts/loader.js\"></script>\n"
             + "<script type=\"text/javascript\">\n"
