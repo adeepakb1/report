@@ -1621,7 +1621,7 @@
             "methodName": "Scenario Outline As a user I would like to recharge my Token PLN on quick login"
           },
           {
-            "status": "FAIL",
+            "status": "PASS",
             "exception": {
               "className": "androidx.test.espresso.PerformException",
               "message": "Error performing 'wait for a specific view with id <with id: blibli.mobile.commerce:id/navigation_account> during 60000 millis.' on view 'is a root view.'.",

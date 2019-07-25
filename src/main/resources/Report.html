@@ -26,7 +26,7 @@ rect {fill-opacity: 0.0;}
 <body>
  <center><img src="https://vignette.wikia.nocookie.net/logopedia/images/9/93/Blibli_2015.png/revision/latest?cb=20180808040105" width="220" height="60"></center>
 <center>
-<h1>Blibli Deeplinks Mobile Automation Report</h1>
+<h1>Blibli Android Automation Report</h1>
 </center>
 <div id="piechart" align="middle" style="vertical-align: top;"></div><script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
@@ -35,51 +35,15 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
 ['Result', 'Count'],
-['Pass', Number(2)],
-['Fail', Number(10)]
+['Pass', Number({pass_count})],
+['Fail', Number({fail_count})]
 ]);
 var options = {'title':'Deeplink Result', 'width':550, 'height':400};var chart = new google.visualization.PieChart(document.getElementById('piechart'));chart.draw(data, options);}</script><center><table cellspacing="0" cellpadding="0" class="testOverview" style="margin-bottom: 10px;border-collapse: collapse;empty-cells: show;">
 <tr>
 <th style="border: 1px solid #009;padding: .25em .5em;">Test Name</th>
 <th style="border: 1px solid #009;padding: .25em .5em;">Status</th>
 </tr>
-<tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I want to take money from Multifinance</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I would like to do a BPJS transaction</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">PASS</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I would like to recharge my Pulsa Pascabayar on quick login</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I would like to recharge my Tagihan PLN on quick login</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I would like to buy Game Voucher</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I would like to recharge my Data Paket on quick login</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I would like to do online transaction for Tv Cable postpaid</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">PASS</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user i would like to pay water bill</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I want to recharge my TV Cable Prepaid Voucher</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I would like to recharge my Phone on quick login</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user I would like to recharge my Token PLN on quick login</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr><tr>
-<td style="text-align: left;padding-right: 2em;border: 1px solid #009;padding: .25em .5em;"><b>Scenario Outline As a user i would like to pay Telephone Bill</b></td>
-<td class="numi" style="border: 1px solid #009;padding: .25em .5em;text-align: right;">FAIL</td>
-</tr></table>
+{html_report}</table>
 </center>
 </body>
 </html>
