@@ -53,4 +53,18 @@ public class MyFeature {
     @Override public int hashCode() {
         return Objects.hash(getFeatureName());
     }
+
+    /* @Override
+    public boolean equals(Object object)
+    {
+        boolean sameSame = false;
+
+        if (object != null && object instanceof MyFeature)
+        {
+            sameSame = this.getFeatureName() == ((MyFeature) object).getFeatureName();
+        }
+
+        return sameSame;
+    }*/
+
 }

@@ -21,9 +21,11 @@ public class MainReport {
 
     static ArrayList<MyFeature> myFeatures = new ArrayList<MyFeature>();
     static String featureName;
-    static MyFeature myFeature = new MyFeature(featureName);
+    static MyFeature myFeature ;
     static ExtentHtmlReporter extentHtmlReporter;
     static Long timeStart;
+    static MyFeature myFeatureSame;
+
 
     public static void main(String[] args) throws IOException {
 
@@ -51,18 +53,21 @@ public class MainReport {
 
             for (Object testResult : testResults) {
                 ArrayList<Object> result = (ArrayList<Object>) testResult;
-                for (int i = 0; i < result.size(); i++) {
+
+                    featureName = ((HashMap<String, String>) result.get(0)).get("className");
+                    myFeature= new MyFeature(featureName);
                     String methodName = ((HashMap<String, String>) result.get(0)).get("methodName");
                     MyTestCase myTestCase = new MyTestCase(methodName);
-                    featureName = ((HashMap<String, String>) result.get(0)).get("className");
+
                     myTestCase.setStatus(((HashMap<String, String>) result.get(1)).get("status"));
                     myTestCase.setDuration(
                         String.valueOf(((HashMap<String, String>) result.get(1)).get("duration")));
                     if (myFeatures.contains(myFeature)) {
-                        ArrayList<MyTestCase> myTestCases = myFeature.getTestCases();
+                        sameFeature(myFeature);
+                        ArrayList<MyTestCase> myTestCases = myFeatureSame.getTestCases();
                         myTestCases.add(myTestCase);
-                        myFeature.setTestCases(myTestCases);
-                        myFeature.setDeviceDetail(deviceDetails);
+                        myFeatureSame.setTestCases(myTestCases);
+                        myFeatureSame.setDeviceDetail(deviceDetails);
                     } else {
                         myFeature.setFeatureName(featureName);
                         ArrayList<MyTestCase> myTestCases = new ArrayList<MyTestCase>();
@@ -70,24 +75,23 @@ public class MainReport {
                         myFeature.setTestCases(myTestCases);
                         myFeature.setDeviceDetail(deviceDetails);
                         myFeatures.add(myFeature);
-                    }
+
                 }
             }
         }
 
         ExtentReports extent = createReport();
-        extent.setSystemInfo("os", "win7");
 
         for (MyFeature myFeature : myFeatures) {
-
             ExtentTest newTest = extent.createTest(myFeature.getFeatureName());
            newTest.getModel().setStartTime(getTime());
-
-            newTest.pass("sdsd");
+           newTest.pass("sdsd");
+            DeviceDetail deviceDetail = myFeature.getDeviceDetail();
+            extent.setSystemInfo("Device: " + deviceDetail.getManufacturer()+" "+ deviceDetail.getModel(),"Version: " + deviceDetail.getVersion() + "Api Level: " + deviceDetail
+                .getApiLevel());
 
             newTest.assignCategory(myFeature.getDeviceDetail().getDeviceId());
 
-            DeviceDetail deviceDetail = myFeature.getDeviceDetail();
             newTest.info("Device: " + deviceDetail.getManufacturer() + " " + deviceDetail.getModel()
                 + "\n Version: " + deviceDetail.getVersion() + "\n Api Level: " + deviceDetail
                 .getApiLevel());
@@ -103,6 +107,15 @@ public class MainReport {
         }
 
         extent.flush();
+    }
+
+    private static MyFeature sameFeature(MyFeature o) {
+        for(MyFeature my :myFeatures){
+            if(my.getFeatureName().equalsIgnoreCase(o.getFeatureName())){
+                myFeatureSame = my;
+            }
+        }
+        return myFeatureSame;
     }
 
     private static Date getTime() {
