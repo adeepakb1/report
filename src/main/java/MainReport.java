@@ -1,30 +1,33 @@
+import Report.MyEmailReport;
 import TestModel.DeviceDetail;
 import TestModel.MyFeature;
 import TestModel.MyTestCase;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-/*import com.aventstack.extentreports.configuration.Config;
-import com.aventstack.extentreports.configuration.ConfigLoader;
-import com.aventstack.extentreports.configuration.ConfigMap;*/
-//import com.aventstack.extentreports.externalconfig.ConfigLoader;
+import com.aventstack.extentreports.reporter.ExtentEmailReporter;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.oracle.javafx.jmx.json.JSONException;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.*;
+import javax.mail.MessagingException;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 
 public class MainReport {
 
-
     static ArrayList<MyFeature> myFeatures = new ArrayList<MyFeature>();
     static String featureName;
     static MyFeature myFeature ;
     static ExtentHtmlReporter extentHtmlReporter;
+    static ExtentEmailReporter extentEmailReporter;
     static Long timeStart;
     static MyFeature myFeatureSame;
+    static String configFile;
 
 
     public static void main(String[] args) throws IOException {
@@ -50,25 +53,22 @@ public class MainReport {
                 giveDeviceDetails((HashMap<String, String>) jsonObject.get("deviceDetails"));
             deviceDetails.setDeviceId(key);
 
-
             for (Object testResult : testResults) {
                 ArrayList<Object> result = (ArrayList<Object>) testResult;
-
-                    featureName = ((HashMap<String, String>) result.get(0)).get("className");
-                    myFeature= new MyFeature(featureName);
-                    String methodName = ((HashMap<String, String>) result.get(0)).get("methodName");
-                    MyTestCase myTestCase = new MyTestCase(methodName);
-
-                    myTestCase.setStatus(((HashMap<String, String>) result.get(1)).get("status"));
-                    myTestCase.setDuration(
+                featureName = ((HashMap<String, String>) result.get(0)).get("className");
+                myFeature = new MyFeature(featureName);
+                String methodName = ((HashMap<String, String>) result.get(0)).get("methodName");
+                MyTestCase myTestCase = new MyTestCase(methodName);
+                myTestCase.setStatus(((HashMap<String, String>) result.get(1)).get("status"));
+                myTestCase.setDuration(
                         String.valueOf(((HashMap<String, String>) result.get(1)).get("duration")));
-                    if (myFeatures.contains(myFeature)) {
+                if (myFeatures.contains(myFeature)) {
                         sameFeature(myFeature);
                         ArrayList<MyTestCase> myTestCases = myFeatureSame.getTestCases();
                         myTestCases.add(myTestCase);
                         myFeatureSame.setTestCases(myTestCases);
                         myFeatureSame.setDeviceDetail(deviceDetails);
-                    } else {
+                } else {
                         myFeature.setFeatureName(featureName);
                         ArrayList<MyTestCase> myTestCases = new ArrayList<MyTestCase>();
                         myTestCases.add(myTestCase);
@@ -78,6 +78,11 @@ public class MainReport {
 
                 }
             }
+            try {
+                new MyEmailReport().sendEmail();
+            } catch (MessagingException e) {
+                e.printStackTrace();
+            }
         }
 
         ExtentReports extent = createReport();
@@ -85,7 +90,6 @@ public class MainReport {
         for (MyFeature myFeature : myFeatures) {
             ExtentTest newTest = extent.createTest(myFeature.getFeatureName());
            newTest.getModel().setStartTime(getTime());
-           newTest.pass("sdsd");
             DeviceDetail deviceDetail = myFeature.getDeviceDetail();
             extent.setSystemInfo("Device: " + deviceDetail.getManufacturer()+" "+ deviceDetail.getModel(),"Version: " + deviceDetail.getVersion() + "Api Level: " + deviceDetail
                 .getApiLevel());
@@ -107,8 +111,8 @@ public class MainReport {
         }
 
         extent.flush();
-    }
 
+    }
     private static MyFeature sameFeature(MyFeature o) {
         for(MyFeature my :myFeatures){
             if(my.getFeatureName().equalsIgnoreCase(o.getFeatureName())){
@@ -117,11 +121,12 @@ public class MainReport {
         }
         return myFeatureSame;
     }
-
     private static Date getTime() {
         return new Date(timeStart);
 
     }
+
+
 
     private static ExtentReports createReport() {
 
@@ -130,18 +135,10 @@ public class MainReport {
         extentHtmlReporter = new ExtentHtmlReporter(
             "/Users/deepakkumarsharma/Downloads/report/src/main/resources/GeneratedReport/report1.html");
         extent.attachReporter(extentHtmlReporter);
-        File configFile = new File(
-            "/Users/deepakkumarsharma/Downloads/report/src/main/resources/GeneratedReport/extent-config.xml");
-        //ConfigLoader configLoader = new ConfigLoader(configFile);
-        /*ConfigMap configMap = configLoader.getConfigurationHash();
-        List<Config> list = configMap.getConfigList();
         extentHtmlReporter.loadConfig(
             "/Users/deepakkumarsharma/Downloads/report/src/main/resources/GeneratedReport/extent-config.xml");
-        List<Config> list1 = extentHtmlReporter.getConfigContext().getConfigList();*/
-
-        //extentHtmlReporter.config().setReportName("automation remort");
+        //  List<Config> list1 = extentHtmlReporter.getConfigContext().getConfigList();
         extentHtmlReporter.config().setReportName("Android Automation Report");
-
         return extent;
     }
 

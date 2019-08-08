@@ -216,7 +216,7 @@
             "methodName": "Scenario As a user I want to navigate to home page and see the features"
           },
           {
-            "status": "FAIL",
+            "status": "PASS",
             "exception": {
               "className": "androidx.test.espresso.PerformException",
               "message": "Error performing \u0027wait for a specific view with id \u003cwith text: is \"Pulsa\"\u003e during 45000 millis.\u0027 on view \u0027is a root view.\u0027.",

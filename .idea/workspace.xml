@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c7ff1f4-d895-4c0b-ba5b-708f2909a7f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TestModel/MyReportList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/TestModel/MyReportList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Report/MyEmailReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/GeneratedReport/emailreport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Report/MyExtentReport.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestModel/MyFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestModel/MyFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestModel/MyReportList.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/GeneratedReport/report1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/GeneratedReport/report1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GeneratedReport/report1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GeneratedReport/report1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Report/MyExtentReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Report/MyExtentReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestModel/MyFeature.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestModel/MyFeature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestModel/MyReportList.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/index.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,14 +31,16 @@
     <session id="1971993118">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.34" value="1" />
@@ -43,41 +51,43 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="24" />
-          <entry key="html" value="10" />
-          <entry key="java" value="31" />
+          <entry key="class" value="33" />
+          <entry key="html" value="13" />
+          <entry key="java" value="37" />
           <entry key="json" value="6" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="7" />
+          <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="24" />
-          <entry key="HTML" value="10" />
-          <entry key="JAVA" value="31" />
+          <entry key="CLASS" value="33" />
+          <entry key="HTML" value="13" />
+          <entry key="JAVA" value="37" />
           <entry key="JSON" value="6" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="7" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="19" />
-          <entry key="java" value="5594" />
-          <entry key="xml" value="85" />
+          <entry key="java" value="6252" />
+          <entry key="json" value="4" />
+          <entry key="xml" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="19" />
-          <entry key="JAVA" value="5594" />
-          <entry key="XML" value="85" />
+          <entry key="JAVA" value="6252" />
+          <entry key="JSON" value="4" />
+          <entry key="XML" value="87" />
         </counts>
       </usages-collector>
     </session>
@@ -87,72 +97,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1074">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="183">
+              <caret line="83" column="26" lean-forward="true" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#737#748#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="304" column="5" lean-forward="true" selection-start-line="302" selection-start-column="4" selection-end-line="304" selection-end-column="5" />
-              <folding>
-                <element signature="e#11079#11080#0" expanded="true" />
-                <element signature="e#11117#11118#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/MyTestCase.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Throwable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="148">
+              <caret line="632" column="16" selection-start-line="632" selection-start-column="16" selection-end-line="632" selection-end-column="16" />
               <folding>
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#26222#26223#0" expanded="true" />
+                <element signature="e#26265#26266#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/MyFeature.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/reporter/ExtentHtmlReporter.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            <state relative-caret-position="195">
+              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Report/MyEmailReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-866">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1190#1191#0" expanded="true" />
-                <element signature="e#1243#1244#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/ExtentReports.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/index.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="295" column="68" selection-start-line="295" selection-start-column="68" selection-end-line="295" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -160,28 +143,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/GeneratedReport/report1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="86" column="34" lean-forward="true" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+            <state relative-caret-position="210">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#10593#10601#0" expanded="true" />
-                <element signature="e#13108#13116#0" expanded="true" />
-                <element signature="e#15585#15593#0" expanded="true" />
-                <element signature="e#18055#18063#0" expanded="true" />
-                <element signature="e#19009#19017#0" expanded="true" />
-                <element signature="e#19965#19973#0" expanded="true" />
-                <element signature="e#20909#20917#0" expanded="true" />
-                <element signature="e#23387#23395#0" expanded="true" />
-                <element signature="e#25848#25856#0" expanded="true" />
-                <element signature="e#26803#26811#0" expanded="true" />
-                <element signature="e#27747#27755#0" expanded="true" />
-                <element signature="e#33469#33475#1" expanded="true" />
-                <element signature="e#34371#34377#1" expanded="true" />
+                <element signature="e#10350#10358#0" expanded="true" />
+                <element signature="e#12622#12630#0" expanded="true" />
+                <element signature="e#14856#14864#0" expanded="true" />
+                <element signature="e#17089#17097#0" expanded="true" />
+                <element signature="e#18043#18051#0" expanded="true" />
+                <element signature="e#18999#19007#0" expanded="true" />
+                <element signature="e#19943#19951#0" expanded="true" />
+                <element signature="e#22178#22186#0" expanded="true" />
+                <element signature="e#24396#24404#0" expanded="true" />
+                <element signature="e#25351#25359#0" expanded="true" />
+                <element signature="e#26295#26303#0" expanded="true" />
+                <element signature="e#32017#32023#1" expanded="true" />
+                <element signature="e#32919#32925#1" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/GeneratedReport/emailreport.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -189,41 +177,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
               <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="126" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Report/MyExtentReport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/DeviceDetail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-              <folding>
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-                <element signature="e#1454#1455#0" expanded="true" />
-                <element signature="e#1491#1492#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
-                <element signature="e#1620#1621#0" expanded="true" />
-                <element signature="e#1657#1658#0" expanded="true" />
-                <element signature="e#1687#1688#0" expanded="true" />
-                <element signature="e#1736#1737#0" expanded="true" />
-                <element signature="e#1774#1775#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -244,6 +197,13 @@
       <find>logo</find>
       <find>contai</find>
       <find>contains</find>
+      <find>docum</find>
+      <find>html</find>
+      <find>script</find>
+      <find>style</find>
+      <find>styleshe</find>
+      <find>css</find>
+      <find>flush</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -269,13 +229,13 @@
         <option value="$PROJECT_DIR$/src/main/java/TestModel/MyTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/resources/rere.txt" />
         <option value="$PROJECT_DIR$/src/main/java/TestModel/DeviceDetail.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/GeneratedReport/report1.html" />
+        <option value="$PROJECT_DIR$/src/main/java/TestModel/MyReportList.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/index.json" />
+        <option value="$PROJECT_DIR$/src/main/java/TestModel/MyFeature.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Report/MyExtentReport.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/GeneratedReport/report1.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/index.json" />
-        <option value="$PROJECT_DIR$/src/main/java/TestModel/MyReportList.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainReport.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TestModel/MyFeature.java" />
       </list>
     </option>
   </component>
@@ -298,7 +258,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,14 +296,6 @@
               <item name="report" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="TestModel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="report" type="b2602c69:ProjectViewProjectNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -363,6 +314,11 @@
             </path>
             <path>
               <item name="report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="report" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -389,7 +345,7 @@
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="report" type="b2602c69:ProjectViewProjectNode" />
@@ -415,18 +371,45 @@
               <item name="Maven: com.aventstack:extentreports:4.0.0" type="70bed36:NamedLibraryElementNode" />
               <item name="extentreports-4.0.0.jar" type="462c0819:PsiDirectoryNode" />
               <item name="extentreports" type="462c0819:PsiDirectoryNode" />
-              <item name="externalconfig" type="462c0819:PsiDirectoryNode" />
+              <item name="reporter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.mail:mail:1.5.0-b01" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.mail:mail:1.5.0-b01" type="70bed36:NamedLibraryElementNode" />
+              <item name="mail-1.5.0-b01.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.mail:mail:1.5.0-b01" type="70bed36:NamedLibraryElementNode" />
+              <item name="mail-1.5.0-b01.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.mail:mail:1.5.0-b01" type="70bed36:NamedLibraryElementNode" />
+              <item name="mail-1.5.0-b01.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
+              <item name="internet" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564849910291" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565288375660" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -451,7 +434,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainReport">
+  <component name="RunManager" selected="Application.MyExtentReport">
     <configuration name="MainReport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainReport" />
       <module name="report" />
@@ -486,8 +469,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainReport" />
         <item itemvalue="Application.MyExtentReport" />
+        <item itemvalue="Application.MainReport" />
         <item itemvalue="Application.MyMain" />
       </list>
     </recent_temporary>
@@ -507,8 +490,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28756058" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30210015" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -584,39 +568,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/MainReport.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MainReport.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MainReport.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MainReport.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MainReport.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MainReport.java</url>
-          <line>115</line>
+          <line>119</line>
           <properties />
           <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainReport.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainReport.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainReport.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Report/MyEmailReport.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="126" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -777,47 +755,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/MyReportList.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/externalconfig/model/Config.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="210">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/GeneratedReport/extent-config.xml">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="134" selection-start-line="32" selection-start-column="134" selection-end-line="32" selection-end-column="134" />
+        <state relative-caret-position="4050">
+          <caret line="302" column="1" selection-start-line="302" selection-start-column="1" selection-end-line="302" selection-end-column="1" />
+          <folding>
+            <element signature="e#11079#11080#0" expanded="true" />
+            <element signature="e#11117#11118#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Report.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/index.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="126" />
+        <state relative-caret-position="3270">
+          <caret line="218" column="27" selection-start-line="218" selection-start-column="27" selection-end-line="218" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Report/MyExtentReport.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/MyTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="195">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/MyFeature.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/ExtentReports.class">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        <state relative-caret-position="675">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/DeviceDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="150">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           <folding>
             <element signature="e#1335#1336#0" expanded="true" />
@@ -836,93 +832,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/GeneratedReport/extent-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="304" column="5" lean-forward="true" selection-start-line="302" selection-start-column="4" selection-end-line="304" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/reporter/BasicFileReporter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
           <folding>
-            <element signature="e#11079#11080#0" expanded="true" />
-            <element signature="e#11117#11118#0" expanded="true" />
+            <element signature="e#10392#10393#0" expanded="true" />
+            <element signature="e#10426#10427#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/MyReportList.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/ExtentReports.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="86">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/SourceProvider.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/reporter/ExtentHtmlReporter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/ReportAggregates.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.0/extentreports-4.0.0.jar!/com/aventstack/extentreports/reporter/ExtentEmailReporter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar!/javax/mail/Multipart.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar!/javax/mail/internet/MimeMessage.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="572" column="29" lean-forward="true" selection-start-line="572" selection-start-column="29" selection-end-line="572" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/GeneratedReport/emailreport.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/GeneratedReport/report1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#10350#10358#0" expanded="true" />
+            <element signature="e#12622#12630#0" expanded="true" />
+            <element signature="e#14856#14864#0" expanded="true" />
+            <element signature="e#17089#17097#0" expanded="true" />
+            <element signature="e#18043#18051#0" expanded="true" />
+            <element signature="e#18999#19007#0" expanded="true" />
+            <element signature="e#19943#19951#0" expanded="true" />
+            <element signature="e#22178#22186#0" expanded="true" />
+            <element signature="e#24396#24404#0" expanded="true" />
+            <element signature="e#25351#25359#0" expanded="true" />
+            <element signature="e#26295#26303#0" expanded="true" />
+            <element signature="e#32017#32023#1" expanded="true" />
+            <element signature="e#32919#32925#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/MyFeature.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Report/MyEmailReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        <state relative-caret-position="-866">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1190#1191#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1074">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        <state relative-caret-position="183">
+          <caret line="83" column="26" lean-forward="true" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#737#748#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/index.json">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="295" column="68" selection-start-line="295" selection-start-column="68" selection-end-line="295" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/GeneratedReport/report1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="86" column="34" lean-forward="true" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
+        <state relative-caret-position="148">
+          <caret line="632" column="16" selection-start-line="632" selection-start-column="16" selection-end-line="632" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#10593#10601#0" expanded="true" />
-            <element signature="e#13108#13116#0" expanded="true" />
-            <element signature="e#15585#15593#0" expanded="true" />
-            <element signature="e#18055#18063#0" expanded="true" />
-            <element signature="e#19009#19017#0" expanded="true" />
-            <element signature="e#19965#19973#0" expanded="true" />
-            <element signature="e#20909#20917#0" expanded="true" />
-            <element signature="e#23387#23395#0" expanded="true" />
-            <element signature="e#25848#25856#0" expanded="true" />
-            <element signature="e#26803#26811#0" expanded="true" />
-            <element signature="e#27747#27755#0" expanded="true" />
-            <element signature="e#33469#33475#1" expanded="true" />
-            <element signature="e#34371#34377#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TestModel/MyTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#26222#26223#0" expanded="true" />
+            <element signature="e#26265#26266#0" expanded="true" />
           </folding>
         </state>
       </provider>
