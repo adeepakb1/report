@@ -26,12 +26,7 @@ public class MyEmailReport {
     public void sendEmail() throws MessagingException, IOException {
 
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("/Users/deepakkumarsharma/Downloads/report/src/main/resources/GeneratedReport/report1.html")));
 
-        String s= "";
-        while ((s=br.readLine())!=null){
-            emailContent+=s;
-        }
 
 
         // Step1
@@ -46,7 +41,7 @@ public class MyEmailReport {
         System.out.println("\n\n 2nd ===> get Mail Session..");
         getMailSession = Session.getDefaultInstance(mailServerProperties, null);
         generateMailMessage = new MimeMessage(getMailSession);
-        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("ankurgarg53@gmail.com"));
+        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("satadip.ghosh@coviam.com"));
         generateMailMessage.setSubject("Greetings from Crunchify..");
        // String emailBody = emailContent;     //Test email by Crunchify.com JavaMail API example. " + "<br><br> Regards, <br>Crunchify Admin";
         //generateMailMessage.setContent(emailBody, "text/html; charset=utf-8");
@@ -67,7 +62,7 @@ public class MyEmailReport {
 
         // Part two is attachment
         messageBodyPart = new MimeBodyPart();
-        String filename = "/Users/deepakkumarsharma/Downloads/report/src/main/resources/GeneratedReport/report1.html";
+        String filename =  System.getProperty("user.dir")+"/src/main/resources/GeneratedReport/report1.html";
         DataSource source = new FileDataSource(filename);
         messageBodyPart.setDataHandler(new DataHandler(source));
         messageBodyPart.setFileName(filename);
@@ -77,7 +72,6 @@ public class MyEmailReport {
         generateMailMessage.setContent(multipart);
 
         // Send message
-
 
         System.out.println("Sent message successfully....");
 

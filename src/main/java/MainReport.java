@@ -78,11 +78,7 @@ public class MainReport {
 
                 }
             }
-            try {
-                new MyEmailReport().sendEmail();
-            } catch (MessagingException e) {
-                e.printStackTrace();
-            }
+
         }
 
         ExtentReports extent = createReport();
@@ -112,6 +108,11 @@ public class MainReport {
 
         extent.flush();
 
+        try {
+            new MyEmailReport().sendEmail();
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
     }
     private static MyFeature sameFeature(MyFeature o) {
         for(MyFeature my :myFeatures){
@@ -133,10 +134,10 @@ public class MainReport {
         ExtentReports extent = new ExtentReports();
 
         extentHtmlReporter = new ExtentHtmlReporter(
-            "/Users/deepakkumarsharma/Downloads/report/src/main/resources/GeneratedReport/report1.html");
+             System.getProperty("user.dir")+"/src/main/resources/GeneratedReport/report1.html");
         extent.attachReporter(extentHtmlReporter);
         extentHtmlReporter.loadConfig(
-            "/Users/deepakkumarsharma/Downloads/report/src/main/resources/GeneratedReport/extent-config.xml");
+            System.getProperty("user.dir")+"/src/main/resources/GeneratedReport/extent-config.xml");
         //  List<Config> list1 = extentHtmlReporter.getConfigContext().getConfigList();
         extentHtmlReporter.config().setReportName("Android Automation Report");
         return extent;
