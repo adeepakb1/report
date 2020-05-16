@@ -83,7 +83,7 @@ public class MyEmailReport {
 
         // Enter your correct gmail UserID and Password
         // if you have 2FA enabled then provide App Specific Password
-        transport.connect("smtp.gmail.com", "deepakjagdambakumar@gmail.com", "shivshaktiji");
+        transport.connect("smtp.gmail.com", "yourmailid@gmail.com", "password");
         transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
         transport.close();
 
